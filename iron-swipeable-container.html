@@ -254,7 +254,7 @@ want to be swiped:
     _onTransitionEnd: function(event) {
       var target = event.currentTarget;
 
-      if (this._swipeComplete && event.propertyName === 'opacity') {
+      if (this._swipeComplete && event.propertyName === 'transform') {
         // Copy of https://github.com/PolymerElements/iron-swipeable-container/pull/19
         //Polymer.dom(this).removeChild(target);
         this.fire('iron-swipe',
